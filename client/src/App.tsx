@@ -8,7 +8,7 @@ function App() {
 
 const fetchUsers = async (e:any) =>{
   e.preventDefault();
-  const response = await fetch('https://test-gcal.onrender.com/api/users');
+  const response = await fetch('https://test-gcal.onrender.com/api/users');//link to the server
   const body = await response.json();
   setUsers(body);
 }
