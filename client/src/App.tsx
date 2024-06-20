@@ -8,7 +8,7 @@ function App() {
 
 const fetchUsers = async (e:any) =>{
   e.preventDefault();
-  const response = await fetch('https://test-1-4a9q.onrender.com');
+  const response = await fetch('https://test-1-4a9q.onrender.com/api/users');
   const body = await response.json();
   setUsers(body);
 }
